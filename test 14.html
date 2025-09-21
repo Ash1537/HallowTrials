@@ -258,8 +258,8 @@
 
   <div class="panel">
     <h3>Event Details</h3>
-    <p><strong>Date:</strong> 31 Oct, 7:00PM — Midnight</p><br>
-    <p><strong>Venue:</strong> The Old Mill Warehouse</p><br>
+    <p><strong>Date:</strong> 31 Oct, 8:00PM — 11:00PM</p><br>
+    <p><strong>Venue:</strong> Level 9 to 7</p><br>
     <p><strong>What to expect:</strong> 6 eerie arcade cabinets, live screams, candy, and a site-wide code hunt.</p>
   </div>
 </section>
@@ -270,7 +270,7 @@
     <div class="cd-wrap">
       <div class="cd-left">
         <h2 class="cd-title">The <span style="color:var(--blood)">Hallow Trials</span> begin in…</h2>
-        <p class="cd-sub">Doors creak at <strong>7:00 PM</strong> on Halloween night. When the clock hits zero, the warehouse opens.</p>
+        <p class="cd-sub">Doors creak at <strong>8:00 PM</strong> on Halloween night. When the clock hits zero, the warehouse opens.</p>
         <div class="tiles" role="timer" aria-live="polite">
           <div class="tile"><div class="num" id="dd">—</div><div class="lbl">Days</div></div>
           <div class="tile"><div class="num" id="hh">—</div><div class="lbl">Hours</div></div>
@@ -373,7 +373,7 @@
 
   <script>
     /* ===== Countdown logic ===== */
-    function nextHalloween(year){ return new Date(year, 9, 31, 19, 0, 0); }
+    function nextHalloween(year){ return new Date(year, 9, 31, 20, 0, 0); }
     (function runCountdown(){
       const now = new Date();
       let target = nextHalloween(now.getFullYear());
@@ -440,6 +440,10 @@
             <img src="${item.img}" alt="${item.title}" loading="lazy">
             <div class="label">
               <div class="label-title">${isOpen?item.title:'LOCKED'}</div>
+
+
+
+              
               <div class="room">${isOpen?item.room:'Find the code'}</div>
             </div>
           </div>
